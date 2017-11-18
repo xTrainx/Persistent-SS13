@@ -66,7 +66,8 @@
 		to_chat(user, "<span class='notice'>You feed [O] to [src]. It now has [monkeys] monkey cubes stored.</span>")
 		qdel(O)
 		return
-	else if(istype(O, /obj/item/weapon/storage/bag))
+		
+		else if(istype(O, /obj/item/weapon/storage/bag))
 		var/obj/item/storage/P = O
 		var/loaded = 0
 		for(var/obj/G in P.contents)
